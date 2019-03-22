@@ -127,7 +127,8 @@ At last, adjust the path of the modified OMXPlayer in the `omxTV.py` script, usu
 
 Install required Python packages with Python's package installer
 ```
-$ pip install python-lirc pygame
+$ pip install python-lirc 
+$ pip install pygame
 ```
 
 Now run omxTV by typing
