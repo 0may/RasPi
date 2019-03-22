@@ -1,0 +1,40 @@
+# minimum volume: Values between 0.0 (quiet) and 1.0 (max volume)
+volume_min: 0.2
+
+# maximum volume: Values between 'volume_min' and 1.0
+volume_max: 1.0
+
+# volume update rate: Controls how a new volume value impacts on the output volume (= new_volume*update_rate + old_volume*(1-update_rate). 
+#                     Values between 0.0 and 1.0 are allowed
+volume_update_rate: 0.9
+
+# minimum distance in mm
+distance_min: 200
+
+# maximum distance in mm
+distance_max: 1200
+
+# range mode: 1 = short range (~1000mm), 2 = medium range (~2000mm), 3 = long range (~4000mm)
+range_mode: 2
+
+# random play: 1 = play sound files randomly, 0 = loop through sound files in alphanumerical order
+random_play: 0
+
+
+
+# sampling rate of pygame (audio player) in Hz
+sampling_rate: 44100
+
+# size of pygame samples in Bits, - indicates signed
+bitsize: -16
+
+# number of channels
+channels: 1
+
+# pygame buffer size
+buffersize: 2048
+
+
+
+# print debug information (distance, volume...) to stdout: 0 = no print, 1 = print
+print_debug_info: 0

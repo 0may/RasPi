@@ -1,0 +1,91 @@
+begin
+	button = KEY_1
+	prog = omxTV
+	repeat = 0
+	config = ch1
+end
+begin
+	button = KEY_2
+	prog = omxTV
+	repeat = 0
+	config = ch2
+end
+begin
+	button = KEY_3
+	prog = omxTV
+	repeat = 0
+	config = ch3
+end
+begin
+	button = KEY_4
+	prog = omxTV
+	repeat = 0
+	config = ch4
+end
+begin
+	button = KEY_5
+	prog = omxTV
+	repeat = 0
+	config = ch5
+end
+begin
+	button = KEY_6
+	prog = omxTV
+	repeat = 0
+	config = ch6
+end
+begin
+	button = KEY_7
+	prog = omxTV
+	repeat = 0
+	config = ch7
+end
+begin
+	button = KEY_8
+	prog = omxTV
+	repeat = 0
+	config = ch8
+end
+begin
+	button = KEY_9
+	prog = omxTV
+	repeat = 0
+	config = ch9
+end
+begin
+	button = KEY_0
+	prog = omxTV
+	repeat = 0
+	config = ch0
+end
+begin
+	button = KEY_POWER
+	prog = omxTV
+	repeat = 0
+	config = power
+end
+begin
+	button = KEY_CHANNELUP
+	prog = omxTV
+	repeat = 0
+	config = chUp
+end
+begin
+	button = KEY_CHANNELDOWN
+	prog = omxTV
+	repeat = 0
+	config = chDown
+end
+begin
+	button = KEY_VOLUMEUP
+	prog = omxTV
+	repeat = 0
+	config = volUp
+end
+begin
+	button = KEY_VOLUMEDOWN
+	prog = omxTV
+	repeat = 0
+	config = volDown
+end
+
