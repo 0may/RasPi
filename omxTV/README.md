@@ -121,9 +121,14 @@ case 'l':
   }
   break;
 ```
-## Preparing the omxTV script
+## Preparing for omxTV
 
 At last, adjust the path of the modified OMXPlayer in the `omxTV.py` script, usually `pathofthedownloadedcode/omxplayer-dist/usr/bin/omxplayer`.
+
+Install required Python packages with Python's package installer
+```
+$ pip install python-lirc pygame
+```
 
 Now run omxTV by typing
 ```
