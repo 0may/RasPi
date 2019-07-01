@@ -100,9 +100,9 @@ omxTV requires video files in `/media/usb` with names *ch0.mp4*, *ch1.mp4*, ... 
 
 ## Modifying OMXPlayer
 
-omxTV uses a modified version of [OMXPlayer](https://github.com/popcornmix/omxplayer/), because it starts the video files at a position depending on the running time of the program to emulate the continuous behaviour of TV broadcast. The standard OMXPlayer always loops from the specified starting position in the video, while omxTV need a video to start from the beginning when the video file ends. Therefore, you need to change a line of code and build the player from scratch.
+omxTV uses a modified version of [OMXPlayer](https://github.com/popcornmix/omxplayer/), because it starts the video files at a position depending on the running time of the program to emulate the continuous behaviour of TV broadcast. The standard OMXPlayer always loops from the specified starting position in the video, while omxTV need a video to start from the beginning when the video file ends. Therefore, you need to change a line of code and compile the player application yourself.
 
-To modify OMXPlayer, download the repository at https://github.com/popcornmix/omxplayer/ follow the instructions for building on a Raspberry Pi **without installing** to keep the original OMXPlayer of the system if present. When the built is successful, open `omxplayer.cpp` and change the line `m_loop_from = m_incr;` to `m_loop_from = m_incr;` (currently line 759). If line number has changed, look for the code block below, where the line is already changed:
+To modify OMXPlayer, download the repository at https://github.com/popcornmix/omxplayer/ follow the instructions for building on a Raspberry Pi **without installing** to keep the original OMXPlayer of the system if present. When the built is successful, open `omxplayer.cpp` and change the line `m_loop_from = m_incr;` to `m_loop_from = 0;` (currently line 759). Then you need to recompile the application. If line number has changed, look for the code block below, where the line is already changed:
 ```
 case 'l':
   {
@@ -127,7 +127,7 @@ At last, adjust the path of the modified OMXPlayer in the `omxTV.py` script, usu
 
 Install required Python packages with Python's package installer
 ```
-$ pip install python-lirc 
+$ pip install python-lirc
 $ pip install pygame
 ```
 
